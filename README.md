@@ -672,28 +672,33 @@ S14P21A205/
 
 ### 3. 3D 지역 선택
 
-![지역 선택](<img width="1918" height="886" alt="image" src="https://github.com/user-attachments/assets/b807834f-24fa-466d-96c6-2ac149f2a265" />)
+![지역 선택]<img width="1918" height="886" alt="image" src="https://github.com/user-attachments/assets/b807834f-24fa-466d-96c6-2ac149f2a265" />
 
 ### 4. 영업 준비 & 버블 뉴스
 
-![영업 준비](<!-- TODO: 영업 준비 스크린샷 -->)
-![버블 뉴스](<img width="1331" height="837" alt="image" src="https://github.com/user-attachments/assets/0f1cb49c-4d01-4597-b4fa-80cbb69fe63f" />)
+![영업 준비]<img width="1269" height="736" alt="image" src="https://github.com/user-attachments/assets/4677faab-a490-4dac-b567-b8b7c4ff1b0a" />
+
+![버블 뉴스]<img width="1331" height="837" alt="image" src="https://github.com/user-attachments/assets/0f1cb49c-4d01-4597-b4fa-80cbb69fe63f" />
 
 ### 5. 영업 중 (Unity 3D)
 
-![영업 중](<!-- TODO: 영업 중 스크린샷 -->)
+![영업 중]<img width="2868" height="1436" alt="image (5)" src="https://github.com/user-attachments/assets/8d767524-e26b-416f-8c5f-c0e95c484b6b" />
+
 
 ### 6. 일일 리포트
 
-![일일 리포트](<!-- TODO: 리포트 스크린샷 -->)
+![일일 리포트]<img width="1107" height="847" alt="image" src="https://github.com/user-attachments/assets/bbe60dd7-a204-4749-8202-676652487f8c" />
+
 
 ### 7. 시즌 랭킹
 
-![시즌 랭킹](<!-- TODO: 랭킹 스크린샷 -->)
+![시즌 랭킹]<img width="1176" height="814" alt="image" src="https://github.com/user-attachments/assets/c4517cb7-d2c5-4a39-9fda-7a40ac92feb4" />
+
 
 ### 8. 마이페이지
 
-![마이페이지](<!-- TODO: 마이페이지 스크린샷 -->)
+![마이페이지]<img width="1185" height="865" alt="image" src="https://github.com/user-attachments/assets/deb86020-a730-4a99-b599-299c72f526f8" />
+
 
 ---
 
