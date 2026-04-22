@@ -4,7 +4,9 @@
 
 *서울시 실제 유동인구·교통·뉴스 데이터로 구동되는 실시간 경영 전략 게임*
 
-<img width="1154" height="605" alt="image" src="https://github.com/user-attachments/assets/658be586-cd34-4987-9cd8-6d8546c50ac0" />
+<img width="2856" height="1504" alt="눈오는배경 (4)" src="https://github.com/user-attachments/assets/aa6baa5f-c806-4ec7-b15a-412262bde492" />
+
+
 
 
 
