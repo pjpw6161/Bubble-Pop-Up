@@ -1,0 +1,104 @@
+# region ===== App Metadata =====
+spring:
+  application:
+    name: S14P21A205
+  profiles:
+    default: local
+# endregion
+
+# region ===== Config Import (.env) =====
+  config:
+    import: optional:file:.env[.properties]
+  docker:
+    compose:
+      file: ${SPRING_DOCKER_COMPOSE_FILE:docker-compose.local.yml}
+# endregion
+
+# region ===== Local Infra Defaults =====
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+  datasource:
+    url: ${DB_URL:jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:13306}/${DB_NAME:mydb}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&connectionTimeZone=Asia/Seoul&forceConnectionTimeZoneToSession=true}
+    username: ${DB_USERNAME:myuser}
+    password: ${DB_PASSWORD:mypassword}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    time-zone: Asia/Seoul
+  mvc:
+    format:
+      time-zone: Asia/Seoul
+# endregion
+
+# region ===== OAuth2 (Google + SSAFY) =====
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID:}
+            client-secret: ${GOOGLE_CLIENT_SECRET:}
+            scope: openid,profile,email
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            client-name: Google
+          ssafy:
+            client-id: ${SSAFY_CLIENT_ID:}
+            client-secret: ${SSAFY_CLIENT_SECRET:}
+            client-authentication-method: client_secret_post
+            authorization-grant-type: authorization_code
+            scope: ${SSAFY_SCOPE:profile,email}
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            client-name: SSAFY
+            provider: ssafy
+        provider:
+          ssafy:
+            authorization-uri: ${SSAFY_AUTHORIZATION_URI:}
+            token-uri: ${SSAFY_TOKEN_URI:}
+            user-info-uri: ${SSAFY_USER_INFO_URI:}
+            user-name-attribute: ${SSAFY_USER_NAME_ATTRIBUTE:userId}
+# endregion
+
+# region ===== Server =====
+server:
+  port: ${APP_PORT:8080}
+  forward-headers-strategy: framework
+# endregion
+
+# region ===== Actuator / Prometheus =====
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      show-details: when_authorized
+# endregion
+
+# region ===== Auth Redirect Policy =====
+app:
+  auth:
+    default-redirect-url: ${APP_AUTH_DEFAULT_REDIRECT_URL:/auth/callback}
+    allowed-redirect-origins: ${APP_AUTH_ALLOWED_REDIRECT_ORIGINS:http://localhost:5173,http://127.0.0.1:5173,https://j14a205.p.ssafy.io}
+  game:
+    season-lifecycle:
+      prepare-fixed-rate-ms: ${APP_GAME_SEASON_LIFECYCLE_PREPARE_FIXED_RATE_MS:${APP_GAME_SEASON_LIFECYCLE_FIXED_RATE_MS:10000}}
+      synchronize-fixed-rate-ms: ${APP_GAME_SEASON_LIFECYCLE_SYNCHRONIZE_FIXED_RATE_MS:${APP_GAME_SEASON_LIFECYCLE_FIXED_RATE_MS:10000}}
+  jwt:
+    secret: ${JWT_SECRET:}
+    access-token-ttl: ${JWT_ACCESS_TOKEN_TTL:PT30M}
+    refresh-token-ttl: ${JWT_REFRESH_TOKEN_TTL:P14D}
+  redis:
+    ttl:
+      game-day: ${APP_REDIS_TTL_GAME_DAY:PT2H}
+      season-data: ${APP_REDIS_TTL_SEASON_DATA:PT2H}
+      season-ranking: ${APP_REDIS_TTL_SEASON_RANKING:PT15M}
+# endregion
+
+# region ===== Dotenv =====
+dotenv:
+  enabled: true
+  ignoreIfMissing: true
+  ignoreIfMalformed: true
+# endregion
