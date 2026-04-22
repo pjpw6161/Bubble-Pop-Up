@@ -4,9 +4,9 @@
 
 *서울시 실제 유동인구·교통·뉴스 데이터로 구동되는 실시간 경영 전략 게임*
 
-![대표 이미지](<!-- TODO: 대표 이미지 경로 -->)
+<img width="1154" height="605" alt="image" src="https://github.com/user-attachments/assets/658be586-cd34-4987-9cd8-6d8546c50ac0" />
 
-[🌐 데모 보기](https://j14a205.p.ssafy.io/) | [🪧 GitLab](https://lab.ssafy.com/s14-bigdata-dist-sub1/S14P21A205)
+
 
 ---
 
@@ -16,15 +16,11 @@
 - [주요 기능](#-주요-기능)
 - [기술 스택](#-기술-스택)
 - [시스템 아키텍처](#-시스템-아키텍처)
-- [ERD](#-erd)
-- [시작하기](#-시작하기)
 - [API 문서](#-api-문서)
 - [프로젝트 구조](#-프로젝트-구조)
-- [주요 화면](#-주요-화면)
 - [개발 가이드](#-개발-가이드)
 - [배포](#-배포)
 - [프로젝트 통계](#-프로젝트-통계)
-- [팀 소개](#-팀-소개)
 - [참고 자료](#-참고-자료)
 
 ---
@@ -57,7 +53,8 @@
 
 ### 1. 🗺️ 3D 서울 지도 기반 지역 선택
 
-![지역 선택](<!-- TODO: 지역 선택 스크린샷 -->)
+<img width="80%" alt="지역 선택" src="https://github.com/user-attachments/assets/b807834f-24fa-466d-96c6-2ac149f2a265" />
+
 
 - **GeoJSON 기반 3D 서울 행정구역 맵**: Three.js + React Three Fiber로 구현
 - **8개 상권 지역**: 홍대, 강남, 성수, 명동, 이태원, 건대, 여의도, 잠실
@@ -66,7 +63,7 @@
 
 ### 2. 📰 버블 뉴스 시스템
 
-![버블 뉴스](<!-- TODO: 뉴스 스크린샷 -->)
+<img width="80%" alt="버블 뉴스" src="https://github.com/user-attachments/assets/0f1cb49c-4d01-4597-b4fa-80cbb69fe63f" />
 
 - **AI 기반 뉴스 생성**: 실제 트렌드 데이터를 활용한 게임 내 뉴스 기사
 - **뉴스가 경영에 미치는 영향**: 원가 변동, 유동인구 증감, 정부 정책 등
@@ -75,7 +72,7 @@
 
 ### 3. 🏪 영업 준비 & 발주 시스템
 
-![영업 준비](<!-- TODO: 영업 준비 스크린샷 -->)
+  <img width="80%" alt="영업 준비" src="https://github.com/user-attachments/assets/4677faab-a490-4dac-b567-b8b7c4ff1b0a" />
 
 - **정규 발주**: 2, 4, 6일차에 메뉴·수량·가격 결정
 - **재고 관리**: 남은 재고는 2일 뒤 폐기, 과잉 주문 주의
@@ -83,7 +80,9 @@
 
 ### 4. 🎮 실시간 영업 (2분 = 인게임 12시간)
 
-![영업 중](<!-- TODO: 영업 중 스크린샷 -->)
+
+<img width="100%" alt="영업 중" src="https://github.com/user-attachments/assets/8d767524-e26b-416f-8c5f-c0e95c484b6b" />
+
 
 - **Unity WebGL 3D 배경**: 실시간 날씨 효과, 방문객 스폰, 혼잡도 시각화
 - **10초 폴링 실시간 갱신**: 손님 수, 재고, 잔액, 유동인구 실시간 반영
@@ -102,7 +101,9 @@
 
 ### 5. 📊 일일 리포트
 
-![일일 리포트](<!-- TODO: 리포트 스크린샷 -->)
+
+<img width="80%" alt="일일 리포트" src="https://github.com/user-attachments/assets/bbe60dd7-a204-4749-8202-676652487f8c" />
+
 
 - **매출·비용·순이익 분석**: 일별 경영 성과 상세 리포트
 - **수익 그래프**: 일별 수익 추이 차트
@@ -112,7 +113,8 @@
 
 ### 6. 🏆 시즌 랭킹 & 보상
 
-![시즌 랭킹](<!-- TODO: 랭킹 스크린샷 -->)
+
+  <img width="80%" alt="시즌 랭킹" src="https://github.com/user-attachments/assets/c4517cb7-d2c5-4a39-9fda-7a40ac92feb4" />
 
 - **7일간의 시즌 경쟁**: 총 매출, ROI 기반 최종 순위
 - **포디움 (1~3위)**: 상위 3명 특별 표시
@@ -130,7 +132,9 @@
 
 ### 8. 👤 마이페이지 & 시즌 기록
 
-![마이페이지](<!-- TODO: 마이페이지 스크린샷 -->)
+
+  <img width="80%" alt="마이페이지" src="https://github.com/user-attachments/assets/deb86020-a730-4a99-b599-299c72f526f8" />
+
 
 - **통산 시즌 기록**: 참여한 모든 시즌의 매장별 성과
 - **파산/정상 구분**: 파산 매장은 별도 표시
@@ -349,9 +353,6 @@ React (손님 수 +1, delta 표시)
 
 ---
 
-## 📊 ERD
-
-![ERD](<!-- TODO: ERD 이미지 경로 -->)
 
 ### 주요 테이블 관계
 
@@ -383,85 +384,8 @@ item (1) ─── (N) user_item    : 아이템 종류
 
 ---
 
-## 🚀 시작하기
-
-### Prerequisites
-
-- **Java 17+** ([다운로드](https://www.oracle.com/java/technologies/downloads/))
-- **Node.js 22+** ([다운로드](https://nodejs.org/))
-- **MySQL 8.4+** ([다운로드](https://dev.mysql.com/downloads/))
-- **Redis 7.0+** ([다운로드](https://redis.io/download))
-- **Docker & Docker Compose** ([다운로드](https://www.docker.com/products/docker-desktop))
-
-### 로컬 개발 환경 실행
-
-**1. 인프라 (MySQL + Redis + Hadoop + Spark)**
-
-```bash
-cd S14P21A205_BE
-docker compose -f docker-compose.local.yml up -d
-```
-
-**2. Spark ETL 실행 (초기 데이터 적재)**
-
-```bash
-docker compose -f docker-compose.local.yml --profile hdfs-init --profile spark-etl up
-```
-
-**3. Backend**
-
-```bash
-cd S14P21A205_BE
-JAVA_HOME="C:/Users/SSAFY/.jdks/ms-17.0.18" ./gradlew bootRun
-```
-
-**4. Frontend**
-
-```bash
-cd S14P21A205_FE
-npm install
-npm run dev
-```
-
-### 접속
-
-| 서비스 | URL |
-|--------|-----|
-| Frontend | http://localhost:5173 |
-| Backend API | http://localhost:8080 |
-| Swagger UI | http://localhost:8080/swagger-ui.html |
-
-### 환경 변수
-
-Backend `.env` 파일:
-
-```bash
-# Database
-SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/bubblebubble
-SPRING_DATASOURCE_USERNAME=root
-SPRING_DATASOURCE_PASSWORD=your-password
-
-# Redis
-SPRING_REDIS_HOST=localhost
-SPRING_REDIS_PORT=6379
-
-# OAuth2
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-SSAFY_CLIENT_ID=your-ssafy-client-id
-SSAFY_CLIENT_SECRET=your-ssafy-client-secret
-
-# JWT
-JWT_SECRET=your-256-bit-secret
-```
-
----
 
 ## 📚 API 문서
-
-### Swagger UI
-
-👉 **http://localhost:8080/swagger-ui.html**
 
 ### 주요 API 엔드포인트
 
@@ -657,50 +581,6 @@ S14P21A205/
         └── types/                    # TypeScript 타입 정의
 ```
 
----
-
-## 📱 주요 화면
-
-### 1. 랜딩 & 로그인
-
-![랜딩 페이지](<!-- TODO: 랜딩 스크린샷 -->)
-![로그인 페이지](<!-- TODO: 로그인 스크린샷 -->)
-
-### 2. 대시보드 (아이템 선택 & 시즌 참여)
-
-![대시보드](<!-- TODO: 대시보드 스크린샷 -->)
-
-### 3. 3D 지역 선택
-
-![지역 선택]<img width="1918" height="886" alt="image" src="https://github.com/user-attachments/assets/b807834f-24fa-466d-96c6-2ac149f2a265" />
-
-### 4. 영업 준비 & 버블 뉴스
-
-![영업 준비]<img width="1269" height="736" alt="image" src="https://github.com/user-attachments/assets/4677faab-a490-4dac-b567-b8b7c4ff1b0a" />
-
-![버블 뉴스]<img width="1331" height="837" alt="image" src="https://github.com/user-attachments/assets/0f1cb49c-4d01-4597-b4fa-80cbb69fe63f" />
-
-### 5. 영업 중 (Unity 3D)
-
-![영업 중]<img width="2868" height="1436" alt="image (5)" src="https://github.com/user-attachments/assets/8d767524-e26b-416f-8c5f-c0e95c484b6b" />
-
-
-### 6. 일일 리포트
-
-![일일 리포트]<img width="1107" height="847" alt="image" src="https://github.com/user-attachments/assets/bbe60dd7-a204-4749-8202-676652487f8c" />
-
-
-### 7. 시즌 랭킹
-
-![시즌 랭킹]<img width="1176" height="814" alt="image" src="https://github.com/user-attachments/assets/c4517cb7-d2c5-4a39-9fda-7a40ac92feb4" />
-
-
-### 8. 마이페이지
-
-![마이페이지]<img width="1185" height="865" alt="image" src="https://github.com/user-attachments/assets/deb86020-a730-4a99-b599-299c72f526f8" />
-
-
----
 
 ## 💻 개발 가이드
 
@@ -858,60 +738,6 @@ Week 5: 테스트 & 배포
 ```
 
 ---
-
-## 👥 팀 소개
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/pjpw6161">
-        <img src="https://github.com/parkjw-dev.png" width="100px;" alt=""/><br />
-        <sub><b>박지원</b></sub>
-      </a><br />
-      <sub>팀장 / BE / Infra</sub><br />
-      <sub>게임 엔진, 인프라, Unity</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/parksh-dev">
-        <img src="https://github.com/parksh-dev.png" width="100px;" alt=""/><br />
-        <sub><b>박솔희</b></sub>
-      </a><br />
-      <sub>풀스택</sub><br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/yangdh-dev">
-        <img src="https://github.com/yangdh-dev.png" width="100px;" alt=""/><br />
-        <sub><b>양다희</b></sub>
-      </a><br />
-      <sub>풀스택</sub><br />
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/jeongeun-dev">
-        <img src="https://github.com/jeongeun-dev.png" width="100px;" alt=""/><br />
-        <sub><b>정은지</b></sub>
-      </a><br />
-      <sub>풀스택 / AI / Data</sub><br />
-      <sub>Spark ETL, 데이터 파이프라인</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/sayoonjin">
-        <img src="https://github.com/sayoonjin.png" width="100px;" alt=""/><br />
-        <sub><b>사윤진</b></sub>
-      </a><br />
-      <sub>풀스택</sub><br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/jiwon0226">
-        <img src="https://github.com/jiwon0226.png" width="100px;" alt=""/><br />
-        <sub><b>채지원</b></sub>
-      </a><br />
-      <sub>풀스택</sub><br />
-      <sub>GameGuard, PlayPage, 랭킹, UX</sub>
-    </td>
-  </tr>
-</table>
 
 ### 역할 상세
 
