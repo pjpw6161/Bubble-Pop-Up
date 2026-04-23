@@ -1,4 +1,4 @@
-# 🫧 BubbleBubble
+# 🫧 Bubble-Pop-Up
 
 ### 빅데이터 기반 팝업스토어 경영 시뮬레이션 게임
 
@@ -29,7 +29,7 @@
 
 ## 🎯 프로젝트 소개
 
-### 왜 BubbleBubble인가?
+### 왜 Bubble-Pop-Up?
 
 > "팝업스토어 창업, 데이터로 시뮬레이션하고 전략으로 승부하라."
 
@@ -55,7 +55,7 @@
 
 ### 1. 🗺️ 3D 서울 지도 기반 지역 선택
 
-<img width="80%" alt="지역 선택" src="https://github.com/user-attachments/assets/b807834f-24fa-466d-96c6-2ac149f2a265" />
+<img width="2856" height="1510" alt="지역 선택, 팝업명 설명" src="https://github.com/user-attachments/assets/b0afe974-5505-4298-93a3-e370b3221b96" />
 
 
 - **GeoJSON 기반 3D 서울 행정구역 맵**: Three.js + React Three Fiber로 구현
@@ -65,7 +65,8 @@
 
 ### 2. 📰 버블 뉴스 시스템
 
-<img width="80%" alt="버블 뉴스" src="https://github.com/user-attachments/assets/0f1cb49c-4d01-4597-b4fa-80cbb69fe63f" />
+<img width="2858" height="1520" alt="영업중_뉴스" src="https://github.com/user-attachments/assets/c3bbde19-af5c-43a0-9b0d-2434d6561780" />
+
 
 - **AI 기반 뉴스 생성**: 실제 트렌드 데이터를 활용한 게임 내 뉴스 기사
 - **뉴스가 경영에 미치는 영향**: 원가 변동, 유동인구 증감, 정부 정책 등
@@ -74,7 +75,9 @@
 
 ### 3. 🏪 영업 준비 & 발주 시스템
 
-  <img width="80%" alt="영업 준비" src="https://github.com/user-attachments/assets/4677faab-a490-4dac-b567-b8b7c4ff1b0a" />
+<img width="2858" height="1520" alt="영업준비_정규발주" src="https://github.com/user-attachments/assets/43587280-204a-41f5-8f2b-7cc0d9d12bdb" />
+
+
 
 - **정규 발주**: 2, 4, 6일차에 메뉴·수량·가격 결정
 - **재고 관리**: 남은 재고는 2일 뒤 폐기, 과잉 주문 주의
@@ -82,8 +85,8 @@
 
 ### 4. 🎮 실시간 영업 (2분 = 인게임 12시간)
 
+<img width="2856" height="1504" alt="영업중_실시간순위" src="https://github.com/user-attachments/assets/6cb1d8dc-f4e3-4afb-be2c-6f7b3401f929" />
 
-<img width="100%" alt="영업 중" src="https://github.com/user-attachments/assets/8d767524-e26b-416f-8c5f-c0e95c484b6b" />
 
 
 - **Unity WebGL 3D 배경**: 실시간 날씨 효과, 방문객 스폰, 혼잡도 시각화
@@ -104,7 +107,9 @@
 ### 5. 📊 일일 리포트
 
 
-<img width="80%" alt="일일 리포트" src="https://github.com/user-attachments/assets/bbe60dd7-a204-4749-8202-676652487f8c" />
+<img width="2856" height="1510" alt="지역 선택, 팝업명 설명" src="https://github.com/user-attachments/assets/fd7af90d-2ac6-4a9d-9c84-24a05d8157cd" />
+
+
 
 
 - **매출·비용·순이익 분석**: 일별 경영 성과 상세 리포트
@@ -116,7 +121,8 @@
 ### 6. 🏆 시즌 랭킹 & 보상
 
 
-  <img width="80%" alt="시즌 랭킹" src="https://github.com/user-attachments/assets/c4517cb7-d2c5-4a39-9fda-7a40ac92feb4" />
+ <img width="800" height="407" alt="_online-video-cutter com-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/87a8ce08-6219-4165-9cd8-67cc1e20bb8f" />
+
 
 - **7일간의 시즌 경쟁**: 총 매출, ROI 기반 최종 순위
 - **포디움 (1~3위)**: 상위 3명 특별 표시
@@ -125,7 +131,8 @@
 
 ### 7. 🎒 아이템 & 포인트 시스템
 
-![대시보드](<!-- TODO: 대시보드 스크린샷 -->)
+<img width="2858" height="1520" alt="대시보드_포인트, 아이템" src="https://github.com/user-attachments/assets/6e09ca2f-454f-450b-bdf4-e58a09d63758" />
+
 
 - **원재료 할인권**: 20% / 5% 할인
 - **임대료 할인권**: 20% / 5% 할인
@@ -135,7 +142,8 @@
 ### 8. 👤 마이페이지 & 시즌 기록
 
 
-  <img width="80%" alt="마이페이지" src="https://github.com/user-attachments/assets/deb86020-a730-4a99-b599-299c72f526f8" />
+<img width="800" height="407" alt="_online-video-cutter com1-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/c578d650-005e-4f14-b787-75599d171819" />
+
 
 
 - **통산 시즌 기록**: 참여한 모든 시즌의 매장별 성과
